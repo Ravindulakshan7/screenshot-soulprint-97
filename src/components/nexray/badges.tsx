@@ -16,7 +16,7 @@ export function ProtoBadge({ p }: { p: Profile }) {
   );
 }
 
-export function LatencyBadge({ v, label, loading }: { v?: number | null; label: string; loading?: boolean }) {
+export function LatencyBadge({ v, label, loading }: { v?: number | null | undefined; label: string; loading?: boolean | undefined }) {
   const tone =
     loading ? "text-primary" :
     v === undefined ? "text-muted-foreground" :

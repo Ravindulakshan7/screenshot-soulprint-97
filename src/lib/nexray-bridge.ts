@@ -12,11 +12,11 @@ export interface Profile {
   protocol: Protocol;
   host: string;
   port: number;
-  security?: "reality" | "tls" | "none";
-  transport?: "tcp" | "ws" | "grpc";
+  security?: "reality" | "tls" | "none" | undefined;
+  transport?: "tcp" | "ws" | "grpc" | undefined;
   raw: string;
-  tcpLatency?: number | null; // null = timeout
-  proxyLatency?: number | null;
+  tcpLatency?: number | null | undefined; // null = timeout
+  proxyLatency?: number | null | undefined;
 }
 
 export interface ImportResult {
