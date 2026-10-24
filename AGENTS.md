@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- All desktop/OS actions go through `getBridge()` in src/lib/nexray-bridge.ts (window.nexray or in-browser mock) — keeps the UI runnable in preview and Electron.
